@@ -1,20 +1,61 @@
-body{
+/* Configuração global e centralização do conteúdo na tela */
+body {
     color: #000;
     font-family: 'Roboto', sans-serif;
-    background-color: 
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); /* Exemplo do fundo gradiente da imagem */
+    
+    /* As 4 linhas abaixo garantem que o conteúdo fique perfeitamente centralizado na tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
-form{
+/* Estrutura principal do Formulário */
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    width: 100%;
+    max-width: 400px; /* Limita a largura para ficar idêntico ao da primeira tela */
+    padding: 20px;
 }
 
-form.button{
+/* Descrição (texto abaixo da foto de perfil) */
+#description {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Garante que o texto fique centralizado */
+}
+
+/* Correção: Espaçamento entre as tags (form botão) */
+form button {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-top: 20px;
-    border: 100px solid #000;
+    margin-top: 15px; /* Espaço entre os botões empilhados */
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.4); /* Fundo semi-transparente como o da foto */
+    border: 1px solid rgba(0, 0, 0, 0.2);       /* Borda fina e sutil */
+    border-radius: 4px;                         /* Cantos levemente arredondados */
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Rodapé com os ícones sociais */
+footer {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 20px;               /* Cria um espaçamento perfeito e controlado entre os dois ícones */
+    margin-top: 30px;        /* Empurra o rodapé para baixo do formulário */
+}
+
+/* Correção: Espaçamento entre a tag footer e a classe do ícone */
+footer .ion-icon {
+    font-size: 400px;
+    color: #000;
 }
