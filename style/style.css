@@ -4,6 +4,17 @@ body{
     background-color: 
 }
 
-button{
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
+
+form.button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    border: 100px solid #000;
 }
