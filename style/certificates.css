@@ -1,0 +1,104 @@
+/* ==========================================================================
+   1. ESTILOS BASE (Mantendo a identidade visual das outras páginas)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top right, #e3cbf5, #fdedf5 40%, #ffffff 80%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #1a1a1a;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    width: 100%;
+    max-width: 150px; /* Mantém o botão de voltar pequeno e discreto */
+    padding: 12px;
+    margin: 25px auto 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #1a1a1a;
+    border: 1px solid #9e9e9e;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Ícones das Redes Sociais */
+.footer-socials {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    color: #1a1a1a;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-socials a:hover {
+    opacity: 0.7;
+}
+
+/* ==========================================================================
+   2. ALINHAMENTO DOS CERTIFICADOS (Lado a lado)
+   ========================================================================== */
+.main-certificates {
+    width: 100%;
+    max-width: 750px; /* Um pouco maior para caber as duas imagens na horizontal */
+    text-align: center;
+}
+
+/* Esta classe faz a mágica de colocar os itens lado a lado */
+.certificados-grid {
+    display: flex;
+    gap: 20px; /* Espaço de separação entre um certificado e outro */
+    justify-content: center; /* Centraliza o conjunto na tela */
+    flex-wrap: wrap; /* Se a tela for pequena (celular), joga o segundo para baixo */
+}
+
+/* Estilização dos blocos e das imagens dos certificados */
+.img-certificado {
+    flex: 1;
+    min-width: 280px; /* Impede que fiquem esmagados em telas menores */
+    max-width: 340px; /* Limita o tamanho máximo de cada um */
+}
+
+.img-certificado img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Cantos levemente arredondados para um visual moderno */
+    border: 1px solid #c8c8c8; /* Borda fina cinza simulando um documento emoldurado */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra bem suave no fundo */
+    transition: transform 0.3s ease;
+}
+
+/* Efeito sutil de zoom ao passar o mouse por cima do certificado */
+.img-certificado img:hover {
+    transform: scale(1.02);
+}
