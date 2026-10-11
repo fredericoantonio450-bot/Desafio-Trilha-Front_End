@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Mim - Frederico</title>
+    <!---link para estilização da página de padrão-->
     <link rel="stylesheet" href="style/style.css">
+    <!---link para estilização da pagine auth-->
+
+    <!-- Mude de style.css para auth.css -->
+    <link rel="stylesheet" href="style/auth.css">
+
     <!-- Icons -->
-    <script  type = "module"  src = " https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js " > </script> 
-    <script nomodule src = " https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js " > </script>
+    <script type="module" src="https://unpkg.com"></script> 
+    <script nomodule src="https://unpkg.com"></script>
 </head>
 <body>
-    <main>
-    <!---Perfi do Usuario-->
-        <div> <!---Imagem que representa o usuário--->
-          <img class="img" src="img/Frederico Antonio Barros de Oliveira.pdf.png" alt="Sua Imagem">
+    <!-- Container principal com rolagem interna para textos longos -->
+    <main class="main-about">
+        <!---Perfil do Usuario-->
+        <div class="profile-header"> 
+            <img class="img" src="img/Frederico Antonio Barros de Oliveira.pdf.png" alt="Sua Imagem">
+            <h3>Frederico Antonio Barros de Oliveira</h3>
         </div>
-        <h3>Frederico Antonio Barros de Oliveira</h3>
-        <!---Descrição sobre o usuario -->
-        <p><br>Sou estudante de Direito e formado como técnico em Informática para Web, reunindo conhecimentos das áreas jurídica e tecnológica que contribuem para minha formação pessoal e profissional. Tenho interesse em aprender continuamente, desenvolver novas habilidades e ampliar meus conhecimentos, buscando oportunidades que me permitam colocar em prática o que aprendi e adquirir novas experiências no mercado de trabalho.</p>
-       
-    <div class="footer-socials">
 
+        <h1 id="description" for="description">Desensolvimento Front-End no Programa Trilhas</h1>
+        
+        <!---Descrição detalhada sobre o usuario -->
+        <div class="about-container">
+            <p>Sou estudante de Direito e formado como técnico em Informática para Web, reunindo conhecimentos das áreas jurídica e tecnológica que contribuem para minha formação pessoal e profissional. Tenho interesse em aprender continuamente, desenvolver novas habilidades e ampliar meus conhecimentos, buscando oportunidades que me permitam colocar em prática o que aprendi e adquirir novas experiências no mercado de trabalho.</p>
+
+            <p>Possuo conhecimentos em desenvolvimento web, incluindo a criação e estruturação de páginas e sites, além de familiaridade com ferramentas digitais e recursos de informática. Tenho interesse em tecnologia, inovação e automação de processos, especialmente na utilização de ferramentas que possam facilitar tarefas, melhorar a organization e tornar as atividades profissionais mais eficientes. Também busco aprimorar meus conhecimentos em desenvolvimento de sistemas e soluções digitais, acompanhando as possibilidades que a tecnologia oferece para diferentes áreas de atuação.</p>
+
+            <p>A graduação em Direito tem contribuído para o desenvolvimento do meu raciocínio lógico, da capacidade de interpretação e análise, da comunicação escrita, da organização e da atenção aos detalhes. Além disso, procuro desenvolver uma postura ética, responsável e comprometida, compreendendo a importância da transparência, do respeito e da dedicação no ambiente profissional.</p>
+
+            <p>Considero-me uma pessoa proativa, organizada, dedicada e com facilidade para aprender. Tenho disposição para enfrentar novos desafios, receber orientações, trabalhar em equipe e buscar soluções para os problemas que surgem no dia a dia. Valorizo a colaboração, o cumprimento de responsabilidades e a oportunidade de aprender com profissionais mais experientes, entendendo que o desenvolvimento profissional exige esforço, disciplina e aprendizado constante.</p>
+
+            <p>Busco oportunidades profissionais nas quais possa contribuir com minhas habilidades, adquirir experiência prática e continuar evoluindo. Tenho interesse em diferentes áreas, especialmente nas atividades administrativas, jurídicas e tecnológicas, nas quais posso aproveitar meus conhecimentos e desenvolver novas competências. Acredito que a combinação entre minha formação em Direito e meus conhecimentos em Informática para Web representa um diferencial, pois me permite compreender situações de diferentes perspectivas e utilizar a tecnologia como ferramenta para melhorar processos e resultados.</p>
+
+            <p>Meu objetivo é construir uma trajetória profissional sólida, baseada na responsabilidade, no comprometimento, na ética e na busca contínua por conhecimento, contribuindo para o crescimento da organização em que atuar e aproveitando cada oportunidade para aprender, evoluir e entregar um trabalho de qualidade.</p>
+        </div>
+        
     </main>
-    <!---Icons Do GitHub--->
-    <a href="https://github.com/fredericoantonio450-bot/Desafio-Trilha-Front_End" target="_blank" rel="noopener noreferrer" aria-label="Acessar meu perfil do GitHub">
-      <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
-    </a>
-    <!---Icons Do LinkedIn--->
-    <a href="https://www.linkedin.com/in/frederico-antônio-a66733252" target="_blank" rel="noopener noreferrer" aria-label="Acessar meu perfil do LinkedIn">
-      <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
-    </a>
-  </div>
+
+    <div class="footer-socials">
+        <!---Icons Do GitHub--->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Acessar meu perfil do GitHub">
+            <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+        </a>
+        <!---Icons Do LinkedIn--->
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="Acessar meu perfil do LinkedIn">
+            <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+        </a>
+    </div>
 </body>
 </html>
