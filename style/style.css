@@ -1,61 +1,105 @@
-/* Configuração global e centralização do conteúdo na tela */
-body {
-    color: #000;
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); /* Exemplo do fundo gradiente da imagem */
-    
-    /* As 4 linhas abaixo garantem que o conteúdo fique perfeitamente centralizado na tela */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+/* Reset padrão para limpar margens e preenchimentos */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Estrutura principal do Formulário */
-form {
+/* Configuração do plano de fundo degradê lilás/rosa claro */
+body {
+    background: radial-gradient(circle at top right, #e3cbf5, #fdedf5 40%, #ffffff 80%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #1a1a1a;
+}
+
+/* Container principal sem fundo visível, apenas alinhado */
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 400px; /* Limita a largura para ficar idêntico ao da primeira tela */
-    padding: 20px;
+    max-width: 440px;
+    text-align: center;
 }
 
-/* Descrição (texto abaixo da foto de perfil) */
+/* Div que envolve a foto de perfil */
+main > div:first-of-type {
+    margin-bottom: 15px;
+}
+
+/* Foto de perfil redonda com borda fina cinza */
+.img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #a3a3a3;
+}
+
+/* Nome do usuário [Insira aqui o seu nome] */
+h3 {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin-bottom: 6px;
+}
+
+/* Descrição "Desenvolvedor Front-end no Programa Trilhas" */
 #description {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center; /* Garante que o texto fique centralizado */
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #2b2b2b;
+    margin-bottom: 25px;
 }
 
-/* Correção: Espaçamento entre as tags (form botão) */
-form button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Estilização idêntica dos botões */
+button {
+    display: block;
     width: 100%;
-    margin-top: 15px; /* Espaço entre os botões empilhados */
-    padding: 12px;
-    background-color: rgba(255, 255, 255, 0.4); /* Fundo semi-transparente como o da foto */
-    border: 1px solid rgba(0, 0, 0, 0.2);       /* Borda fina e sutil */
-    border-radius: 4px;                         /* Cantos levemente arredondados */
+    padding: 14px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.4); /* Fundo semi-transparente leve */
+    color: #1a1a1a;
+    border: 1px solid #9e9e9e; /* Borda fina acinzentada */
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 400;
     cursor: pointer;
-    font-size: 14px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-/* Rodapé com os ícones sociais */
-footer {
+/* Efeito sutil ao passar o mouse pelos botões */
+button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+/* Espaçamento e alinhamento dos ícones sociais */
+.footer-socials {
     display: flex;
-    justify-content: center; /* Centraliza os ícones horizontalmente */
-    gap: 20px;               /* Cria um espaçamento perfeito e controlado entre os dois ícones */
-    margin-top: 30px;        /* Empurra o rodapé para baixo do formulário */
+    gap: 16px;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-/* Correção: Espaçamento entre a tag footer e a classe do ícone */
-footer .ion-icon {
-    font-size: 400px;
-    color: #000;
+/* Estilização dos ícones do GitHub e LinkedIn */
+.footer-socials a {
+    color: #1a1a1a;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+/* Efeito de transparência suave ao passar o mouse nos ícones */
+.footer-socials a:hover {
+    opacity: 0.7;
 }
