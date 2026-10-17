@@ -1,5 +1,5 @@
 /* Customizações para a página Sobre Mim */
-.main-about {
+/* .main-about {
     max-width: 550px; /* Um pouco mais largo para acomodar melhor o texto */
     max-height: 80vh; /* Limita a altura do card para não estourar a tela */
     display: flex;
@@ -50,4 +50,4 @@
 
 .about-container::-webkit-scrollbar-thumb:hover {
     background: rgba(0, 0, 0, 0.2);
-}
+} */

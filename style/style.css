@@ -1,4 +1,4 @@
-/* Reset padrão para limpar margens e preenchimentos */
+/* Reset padrão */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* Configuração do plano de fundo degradê lilás/rosa claro */
+/* Configuração da página */
 body {
     background: radial-gradient(circle at top right, #e3cbf5, #fdedf5 40%, #ffffff 80%);
     min-height: 100vh;
@@ -18,22 +18,21 @@ body {
     color: #1a1a1a;
 }
 
-/* Container principal sem fundo visível, apenas alinhado */
+/* Container Principal */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 440px;
+    max-width: 800px; /* Largura proporcional e centralizada */
     text-align: center;
 }
 
-/* Div que envolve a foto de perfil */
+/* Perfil */
 main > div:first-of-type {
     margin-bottom: 15px;
 }
 
-/* Foto de perfil redonda com borda fina cinza */
 .img {
     width: 90px;
     height: 90px;
@@ -42,31 +41,110 @@ main > div:first-of-type {
     border: 1px solid #a3a3a3;
 }
 
-/* Nome do usuário [Insira aqui o seu nome] */
 h3 {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: #2b2b2b;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
 }
 
-/* Descrição "Desenvolvedor Front-end no Programa Trilhas" */
-#description {
-    font-size: 0.85rem;
-    font-weight: 400;
+/* Container dos Cards de Projeto */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de tamanho igual */
+    gap: 24px;                             /* Espaçamento entre os cards */
+    width: 100%;                           /* Ocupa a largura total do main */
+    max-width: 700px;                      /* Tamanho agradável e bem visível */
+    margin: 20px auto;
+}
+
+/* Estilização Individual dos Cards */
+.cart-project {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagens dentro dos Cards */
+.cart-project img {
+    width: 100%;
+    max-height: 220px;                     /* Altura máxima para não distorcer */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Links dentro dos Cards */
+.cart-project a {
     color: #2b2b2b;
-    margin-bottom: 25px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #9e9e9e;
+    transition: background-color 0.2s ease;
 }
 
-/* Estilização idêntica dos botões */
-button {
+.cart-project a:hover {
+    background-color: #ffffff;
+}
+
+/* Responsividade para telas menores/celulares */
+@media (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Em telas pequenas fica 1 card por linha */
+    }
+}
+
+/* Ícones Sociais */
+.footer-socials {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.footer-socials a {
+    color: #1a1a1a;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.footer-socials a:hover {
+    opacity: 0.7;
+}
+
+/* Faz com que a tag <a> que envolve o botão ocupe toda a largura do container */
+.meu-botao {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    margin-bottom: 10px; /* Espaçamento entre os botões */
+}
+
+/* Garante que o botão preencha todo o espaço do link e tenha o mesmo tamanho */
+.meu-botao button {
     display: block;
     width: 100%;
     padding: 14px;
-    margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.4); /* Fundo semi-transparente leve */
+    background-color: rgba(255, 255, 255, 0.4);
     color: #1a1a1a;
-    border: 1px solid #9e9e9e; /* Borda fina acinzentada */
+    border: 1px solid #9e9e9e;
     border-radius: 6px;
     font-size: 0.85rem;
     font-weight: 400;
@@ -74,32 +152,11 @@ button {
     transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-/* Efeito sutil ao passar o mouse pelos botões */
-button:hover {
+/* Efeito ao passar o mouse */
+.meu-botao button:hover {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-button:active {
+.meu-botao button:active {
     transform: scale(0.99);
-}
-
-/* Espaçamento e alinhamento dos ícones sociais */
-.footer-socials {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-/* Estilização dos ícones do GitHub e LinkedIn */
-.footer-socials a {
-    color: #1a1a1a;
-    font-size: 1.15rem;
-    text-decoration: none;
-    transition: opacity 0.2s ease;
-}
-
-/* Efeito de transparência suave ao passar o mouse nos ícones */
-.footer-socials a:hover {
-    opacity: 0.7;
 }
