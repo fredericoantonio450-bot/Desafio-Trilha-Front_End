@@ -7,11 +7,7 @@ Foi criado com **HTML5**, **CSS3** e ícones interativos, garantindo uma navega�
 
 ## 🎥 Demonstração do Projeto
 
-<p align="center">
-  <img src="img/demonstracao.gif" alt="Demonstração do Projeto" width="100%">
-</p>
-
-> 💡 *Caso não possua o ficheiro `.gif`, pode substituir a imagem acima por uma captura de ecrã (print) principal da aplicação.*
+<img width="800" height="364" alt="ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/486b6677-8404-49e8-aa3e-eba2e97689e2" />
 
 ---
 
