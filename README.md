@@ -1,7 +1,7 @@
 # 🚀 Desafio Trilha Front-End
 
 Este projeto consiste no desenvolvimento de uma página de apresentação pessoal e portfólio dinâmico, desenvolvido como projeto prático no **Programa Trilhas** (Trilha de Front-End).
-Foi criado com **HTML5**, **CSS3** e ícones interativos, garantindo uma navegação simples, organização visual e responsividade para apresentar informações pessoais, trajetória académica, projetos e certificados de conclusão[cite: 1, 2, 3, 4].
+Foi criado com **HTML5**, **CSS3** e ícones interativos, garantindo uma navegação simples, organização visual e responsividade para apresentar informações pessoais, trajetória académica, projetos e certificados de conclusão.
 
 ---
 
